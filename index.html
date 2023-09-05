@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Hulse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2f6a9a02d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" ></script>
+</head>
+<body>
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="navbar-brand">Andrew D Hulse</div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Resume.docx" download="Resume.docx">Download Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" data-bs-toggle="modal" data-bs-target="#resume-modal">
+                    View Resume
+                </a>
+              </li>
+              <li>
+              <div class="socials">
+              <!-- Linkedin -->
+              <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.linkedin.com/in/andrewdhulse/"
+              role="button"
+              data-mdb-ripple-color="dark"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://github.com/AndrewDHulse/"
+              role="button"
+              data-mdb-ripple-color="dark"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+        </div>
+    </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+    <div>
+      <div id="name">
+        <h1>Andrew D Hulse</h1>
+        <h2>Software Engineer</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- Column for Skills and About Me -->
+          <div class="col-md-6">
+            <div class="about">
+              <h3>About Me</h3>
+              <p>
+                Hi, I'm Andrew! My journey into tech started with 
+                the power steering on my car failing. I couldn't work because I couldn't drive,
+                and I needed to fill the time with something, so I decided to learn coding!
+                <br><br>
+                Since then, I attended General Assembly's software engineering immersive, and gained
+                more skills than I could teach myself on my own. 
+              </p>
+            </div>
+            <div class="skills">
+              <h3>Skills</h3>
+              <ul>
+                <li>JavaScript</li>
+                <li>Express JS</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Django</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Column for the image -->
+          <div class="col-md-6 text-center">
+            <img id="andrew" src="ANDREW.png" alt="A photo of Andrew Hulse" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    
+    <main>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="resume-modal" tabindex="-1" aria-labelledby="resume-modal-Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg"> 
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="resume-modal-Label">Resume</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe src="https://docs.google.com/document/d/1tioBH3bMtJinTXT8lb1MuB1sazAwOfnAUbhDLaPBYvA/view?usp=sharing" frameborder="0" style="width: 100%; height: 600px;"></iframe>                    </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End Modal-->
+              
+              <!--Carousel-->
+              <div class="text-center">
+              <h3 id="projects">Projects</h3>
+            </div>
+              <div id="carousel">
+                <div id="carouselCaptions" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="https://github.com/AndrewDHulse/Rogue-Forge" target="_blank">
+        <img src="rogue.png" class="d-block w-100" alt="screenshot of rogue forge">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Rogue Forge</h5>
+          <p>MERN site for TTRPGs</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="https://github.com/AndrewDHulse/SKRBL" target="_blank">
+          <img src="SKRBL.png" class="d-block w-100" alt="screenshot of skrbl">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SKRBL</h5>
+            <p>MEN stack social media site for creative writing</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+        <a href="https://github.com/AndrewDHulse/ProjectHub" target="_blank">
+        <img src="projecthub.png" class="d-block w-100" alt="screenshot of project hub">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Project Hub</h5>
+          <p>Django site for project planning</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!--End Carousel-->
+
+</main>
+
+
+
+<footer>
+    <div class="text-center p-3" style="background-color: rgba(150, 150, 150, 0.2);">
+        
+        © 2023 Copyright: Andrew Hulse
+      </div>
+</footer>
+
+</body>
+
+
+</html>
