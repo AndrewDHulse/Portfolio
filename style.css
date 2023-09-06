@@ -2,8 +2,10 @@
     color: white;
     background-color: black;
 }
+
 .navbar-brand{
-    color:white
+    color:white;
+    font-size: 2.5em;
 }
 
 .navbar-brand:hover{
@@ -14,6 +16,8 @@
 
 .nav-link{
     color:white;
+    font-size: 1.5em;
+    
 }
 
 .nav-link:hover{
@@ -43,16 +47,21 @@
 }
 
 .carousel-caption { 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.178); 
 }
 
-#carousel{
-    margin: auto;
-    width: 100%;
+#carousel {
+    margin: 20px auto; 
+    max-width: 80%; 
+}
+
+.carousel-inner img {
+    max-width: 100%; 
+    height: auto; 
 }
 
 #andrew{
-    width: 75vmin;
+    width: 25vmin;
 }
 
 #carousel h3 {
@@ -71,31 +80,20 @@
 #name h3{
     margin-top: 5px;  
 }
-.about,
-.skills {
-    width: 80%; 
-    margin: 0 auto; 
-    text-align: left; 
-    font-size: 16px;
-}
-
-
-
 
 .about{
     margin-bottom: 1vmin;
 }
 
-.col-md-6 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+
 
 
 .about, .skills {
-    width: 100%;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; 
+    width: 80%;
     margin: 0 auto;
-    font-size: 16px;
+    text-align: center;
+    font-size: 1.5em;
 }
