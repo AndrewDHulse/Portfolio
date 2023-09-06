@@ -15,6 +15,11 @@
 .nav-link{
     color:white;
 }
+
+.nav-link:hover{
+    color:#666;
+}
+
 .navbar-toggler-icon{
     background-color: white;
 }
@@ -54,6 +59,18 @@
     margin: 0;
 }
 
+#name{
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#name h1 {
+    margin: 0;
+}
+
+#name h3{
+    margin-top: 5px;  
+}
 .about,
 .skills {
     width: 80%; 
@@ -64,6 +81,21 @@
 
 
 
+
 .about{
     margin-bottom: 1vmin;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.about, .skills {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
 }
