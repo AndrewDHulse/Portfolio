@@ -168,6 +168,26 @@ footer {
     font-weight: bold;
 }
 
+
+#cursor {
+    display: inline-block;
+    width: 8px; 
+    height: 20px; 
+    background-color: #333; 
+    animation: blink 0.7s infinite; 
+    margin-left: 5px; 
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .navbar-brand {
