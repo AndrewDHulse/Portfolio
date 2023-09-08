@@ -41,14 +41,15 @@
               </div>
           </div>
       </header>
-    <div>
-      <div id="name">
+
+    <div class="container">
+      <div id="name" class="text-center mt-5">
         <h1>Andrew D Hulse</h1>
         <h3>{Software Engineer}</h3>
       </div>
-      <hr/>
+      <hr class="mt-4">
       <div class="container text-center">
-        <div class="about">
+        <div class="about mt-4">
             <h3>About Me</h3>
             <hr/>
             <p>
@@ -57,30 +58,30 @@
                 Since then, I attended General Assembly's software engineering immersive, and gained more skills than I could teach myself on my own.
             </p>
         </div>
-        <hr/>
-        <div class="skills">
-            <h3>Skills</h3>
-            <hr/>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Express JS</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
+        <hr class="mt-4">
+        <div class="skills mt-4">
+          <h3>Skills</h3>
+          <hr/>
+          <div class="row">
+              <div class="col-md-6">
                   <ul>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>BootStrap</li>
-                        <li>AWS</li>
-                    </ul>
-                  </div>
-                </div>
+                      <li><i class="fab fa-js"></i> JavaScript</li>
+                      <li><i class="fab fa-node"></i> Express JS</li>
+                      <li><i class="fab fa-react"></i> React</li>
+                      <li><i class="fab fa-node-js"></i> Node.js</li>
+                  </ul>
               </div>
-              <hr/>
+              <div class="col-md-6">
+                  <ul>
+                      <li><i class="fab fa-python"></i> Python</li>
+                      <li><i class="fab fa-python"></i> Django</li>
+                      <li><i class="fab fa-bootstrap"></i> BootStrap</li>
+                      <li><i class="fab fa-aws"></i> AWS</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="mt-4"
             </div>
             
     <main>
@@ -103,14 +104,14 @@
               </div>
               <!--End Modal-->
 
-              <section id="projects">
+              <section id="projects" class="container mt-4">
                 <h3 class="section-heading">Projects</h3>
                 <hr/>
               <!-- Carousel for Rogue Forge Project -->
-              <article class="project"></article>
-              <h4 class="project-title">Rogue Forge</h4>
-              <div class="project-container">
-              <div class="project-carousel">
+              <article class="project">
+                <h4 class="project-title">Rogue Forge</h4>
+                <div class="project-container">
+                    <div class="project-carousel">
               <div id="carouselRogueForge" class="carousel slide">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselRogueForge" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -123,10 +124,6 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="rogue.png" class="d-block w-100" alt="screenshot of Rogue Forge">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Rogue Forge</h5>
-                      <p>MERN site for TTRPGs</p>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img src="rogue2.png" class="d-block w-100" alt="screenshot of Rogue Forge">
@@ -155,16 +152,23 @@
               </div>
             </div>
             <p class="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                A MERN app built around a dynamic character sheet creator. Developed in a one-week sprint.
+                <ul>
+                    <li>Utilized MongoDB for data storage and management.</li>
+                    <li>Implemented a dice roller React component for various sided dice.</li>
+                    <li>Created a custom whiteboard React component with features like "clear" and an eraser.</li>
+                </ul>
+                <a href="https://github.com/AndrewDHulse/Rogue-Forge" target="_blank" class="btn btn-primary">View GitHub</a>
+                <a href="https://rogueforge-2c9bd98b583a.herokuapp.com/" target="_blank" class="btn btn-secondary">View Site</a>
             </p>
-          </div>
-        </article>
+        </div>
+    </article>
 
 <!-- Carousel for SKRBL Project -->
 <article class="project">
-<h4 class="project-title">SKRBL</h4>
-<div class="project-container">
-<div class="project-carousel">
+  <h4 class="project-title">SKRBL</h4>
+  <div class="project-container">
+      <div class="project-carousel">
 <div id="carouselSKRBL" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselSKRBL" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -193,16 +197,22 @@
 </div>
 </div>
 <p class="project-description">
- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    A social media application that provides users with randomized prompts for creativity through prose and poetry.
+    <ul>
+        <li>Utilized MEN stack for CRUD operations in a one-week sprint.</li>
+        <li>Leveraged MongoDB and JavaScript for efficient data querying and relationships.</li>
+    </ul>
+    <a href="https://github.com/AndrewDHulse/SKRBL" target="_blank" class="btn btn-primary">View GitHub</a>
+    <a href="https://skrbl-673d033cbc21.herokuapp.com/posts" target="_blank" class="btn btn-secondary">View Site</a>
 </p>
 </div>
 </article>
 
 <!-- Carousel for Project Hub Project -->
 <article class="project">
-<h4 class="project-title">Project Hub</h4>
-<div class="project-container">
-<div class="project-carousel">
+  <h4 class="project-title">SKRBL</h4>
+  <div class="project-container">
+      <div class="project-carousel">
 <div id="carouselProjectHub" class="carousel slide">
   <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselProjectHub" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -235,11 +245,17 @@
 </div>
 </div>
 <p class="project-description">
- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    A productivity site designed for teams. Built collaboratively in a one-week sprint.
+    <ul>
+        <li>Built with Django and Python, utilizing complex model structures.</li>
+        <li>Experimented with Bootstrap and Django's object queries.</li>
+        <li>Overrode Django's default behaviors for modularity testing.</li>
+    </ul>
+    <a href="https://github.com/AndrewDHulse/projecthub" target="_blank" class="btn btn-primary">View GitHub</a>
+    <a href="https://projecthub-avah-f1fe7fefab0a.herokuapp.com/" target="_blank" class="btn btn-secondary">View Site</a>
 </p>
 </div>
 </article>
-<!--End Carousel-->
 </section>
 </main>
 
